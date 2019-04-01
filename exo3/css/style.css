@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'PT Sans',MessinaSans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.black{
+    background: #000;
+    color: #fff !important;
+}
+nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0 23% 0 15%;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+}
+ul{
+    margin-top: 20px;
+}
+ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s all;
+}
+ul li:hover{
+    border-bottom: 2px solid rgb(133,0,32);
+    transition: .5s all;
+}
+ul.menu1{
+    /*padding: 50px auto;*/
+    max-height:  50px;
+    overflow: hidden;
+}
+.menu2{
+    position: absolute;
+    float: right;
+    display: none;
+    right: 0px;
+    top: 0;
+}
+.no_teme{
+    min-width: 200px;
+}
+.no_teme:hover{
+    border: none;
+}
+
+.menu3{
+    position: absolute;
+    display: none;
+    padding: 10px 5px !important;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+}
+.menu3 li i{
+    color: #aa4;
+}
+.menu3 li:hover{
+    border-bottom: none !important;
+}
+
+.menuClick{
+    background: #000 !important;
+    color: #fff !important;
+}
+
+#two{
+    padding-left: 40px;
+    margin-top: 70px;
+    font-size: medium !important;
+    background: rgb(133,0,32);
+    color: white;
+    min-height: 500px;
+}
+#two button{
+    outline: none;
+    background: none;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #E57373;
+    transition: .5s all;
+}
+
+#two span{
+    color: #777;
+    display: block;
+}
+
+#two button:hover{
+    background: #E57373;
+    color: #000;
+    border: none;
+}
+
+
+
+.abs{
+    display: none;
+    min-width: 200px;
+    border-top: 2px solid rgb(133,0,32);
+    background: #fff;
+    box-shadow: 0 0 5px #aaa;
+    margin-top: 10px;
+}
+.abs li{
+    display: none;
+}
+.abs li:hover{
+    border-bottom: none !important;
+    color: rgb(133,0,32);
+
+}
+
+
+.fa-arrow-down{
+    color: #ea1269;
+}
+
+.searchB{
+    position: absolute;
+    border-left: 1px solid #aaa;
+    text-align: center;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    transition: .5s all;
+}
+.searchB i{
+    margin: 20px auto;
+    font-size: xx-large;
+    color: rgb(133,0,32);
+}
+.searchB:hover{
+    background: rgb(133,0,32);
+    transition: .5s all;
+}
+.searchB:hover i {
+    color: #fff;
+}
+section{
+    display: none;
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: xx-large;
+}
+.intent{
+    position: relative;
+    /*padding-top: 25px;*/
+    background: #fff;
+    width: 350px;
+    height: 100px;
+    border: 1px solid #aaa;
+}
+
+input{
+    width:170px;
+    outline: none !important;
+    border: none;
+    margin-left: 60px;
+    color: #aaa;
+}
+/*input:focus{*/
+    /*color: #000;*/
+/*}*/
+/******moins important*********/
+.intent i{
+    position: absolute;
+    left: 10px;
+    top:32px;
+    color:rgb(133,0,32);
+}
+.spot{
+    position: absolute;
+    border-left: 1px solid #aaa;
+    /*padding: 10px 0px;*/
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    top: 70px;
+
+}
+.spot i{
+    color: blue;
+    margin-left: 20px;
+    font-size: 30px;
+}
+/******************/
+
+.spot p{
+    margin-top: 200px;
+    width: 100%;
+    -webkit-transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 631px) {
+    .menu3{
+        display: block !important;
+    }
+    .no_teme{
+        background:#444;
+        margin-top: -15px;
+    }
+    .menu2, .menu1 , .searchB  {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 632px) and (max-width: 757px) {
+    .menu2, .abs .two,.abs .one,.abs .three,.abs .four {
+        display: block;
+    }
+    nav{
+        padding: 0 28% 0 15%;
+    }
+
+}
+@media screen and (min-width: 758px) and (max-width: 862px)  {
+    .menu2, .abs .two,.abs .one,.abs .three {
+        display: block;
+    }
+
+}
+@media screen and (min-width: 863px) and (max-width: 1017px)  {
+    .menu2,.abs .two,.abs .one {
+        display: block;
+    }
+
+}
+@media screen and (min-width: 1018px) and (max-width: 1177px) {
+    .menu2,.abs .one{
+        display: block;
+    }
+
+}
+

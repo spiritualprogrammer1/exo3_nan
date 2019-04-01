@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'PT Sans',MessinaSans,'Franklin Gothic Book';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0 23% 0 15%;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+}
+
+ul {
+    margin-top: 20px;
+}
+ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s all;
+}
+ul li:hover {
+    border-bottom: 4px solid rgb(133,0,3);
+    transition: .5s all;
+}
+
+ul.menu1{
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.menu2{
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.no_teme{
+    min-width: 200px;
+}
+.no_teme i {
+    border: none;
+}
+
+.menu3 {
+    position: absolute;
+    display: none;
+   padding: 0 20px 0 10px;
+    top: 0;
+    right: 0;
+    width: 100px;
+    cursor: pointer;
+}
+
+.searchB {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #aaa;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.searchB:hover {
+    background: rgb(133,0,3);
+    transition: .5s all;
+}
+.searchB i {
+    color: red;
+}
+.searchB:hover i {
+    color: white;
+    transition: .5s all;
+}
+.black{
+    background: black;
+    color: white;
+}
+
+section {
+    margin-top: 200px;
+    padding-top: 100px;
+    font-size: x-large;
+   display: none;
+}
+
+.intent {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    border: 1px solid #aaa;
+    background: white;
+
+}
+
+input {
+    width: 150px;
+    outline: none !important;
+    border: none;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.spot{
+    position: absolute;
+    border-left: 1px solid #aaa;
+    right: 0;
+    top:70px;
+    bottom: 0;
+    width: 70px;
+
+}
+
+.spot p {
+    margin-top: 200px;
+    -webkit-transform: rotate(-90deg);
+}
+
+.spot i {
+    color: darkblue;
+    margin-left: 20px;
+}
+
+#two{
+    padding-left: 40px;
+    margin-top: 70px;
+    font-size: medium !important;
+    background: rgb(133,0,32);
+    color: white;
+   
+    /*min-height: 500px;*/
+}
+
+#two button{
+    outline: none;
+    background: none;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #E57373;
+    transition: .5s all;
+}
+
+#two span{
+    color: #777;
+    display: block;
+}
+
+#two button:hover{
+    background: #E57373;
+    color: #000;
+    border: none;
+}
+
+@media screen and (max-width: 612px) {
+    .menu3 {
+        display: block;
+    }
+    .menu1,.menu2,.searchB{
+        display: none;
+    }
+
+}
+
+@media screen and  (min-width: 613px) and (max-width: 757px) {
+    .menu2 , .abs .one,.abs .two , .abs .three , .abs .four {
+        display: block;
+    }
+
+
+}
+
+@media screen and  (min-width: 758px) and (max-width: 862px) {
+    .menu2 , .abs .one,.abs .two , .abs .three {
+        display: block;
+    }
+
+}
+
+@media screen and  (min-width: 863px) and (max-width: 1017px) {
+    .menu2 , .abs .one,.abs .two  {
+        display: block;
+    }
+
+}
+
+@media screen and  (min-width: 1017px) and (max-width: 1117px) {
+    .menu2 , .abs .one {
+        display: block;
+    }
+
+}
